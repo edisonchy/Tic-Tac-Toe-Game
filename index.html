@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="boarder">
+      <h1>Tic-Tac-Toe</h1>
+
+      <!-- Wrapper to place Menu and Game Board side by side -->
+      <div class="wrapper">
+        <!-- Game Board -->
+        <div class="game">
+          <div class="game-header">
+            <h2>Game</h2>
+            <button id="reset" class="game-button" aria-label="Reset Game">reset</button>
+            <button id="start" class="game-button" aria-label="Start Game">start</button>
+          </div>
+          <div class="board" role="grid" aria-label="Tic-Tac-Toe Board">
+            <button
+              class="square"
+              id="0"
+              role="gridcell"
+              aria-label="Cell 1, empty"
+            ></button>
+            <button
+              class="square"
+              id="1"
+              role="gridcell"
+              aria-label="Cell 2, empty"
+            ></button>
+            <button
+              class="square"
+              id="2"
+              role="gridcell"
+              aria-label="Cell 3, empty"
+            ></button>
+            <button
+              class="square"
+              id="3"
+              role="gridcell"
+              aria-label="Cell 4, empty"
+            ></button>
+            <button
+              class="square"
+              id="4"
+              role="gridcell"
+              aria-label="Cell 5, empty"
+            ></button>
+            <button
+              class="square"
+              id="5"
+              role="gridcell"
+              aria-label="Cell 6, empty"
+            ></button>
+            <button
+              class="square"
+              id="6"
+              role="gridcell"
+              aria-label="Cell 7, empty"
+            ></button>
+            <button
+              class="square"
+              id="7"
+              role="gridcell"
+              aria-label="Cell 8, empty"
+            ></button>
+            <button
+              class="square"
+              id="8"
+              role="gridcell"
+              aria-label="Cell 9, empty"
+            ></button>
+          </div>
+
+          <!-- Game Info & Start Button -->
+          <div class="message">
+            <h3>Message:</h3>
+            <p id="message" aria-live="polite">Select a mode to start</p>
+          </div>
+        </div>
+
+        <!-- Menu Section -->
+        <div class="Menu">
+          <h2>Menu</h2>
+          <div class="selection">
+            <label for="game-mode">Choose Mode:</label>
+            <select id="game-mode">
+              <option value="" disabled selected>Select Mode</option>
+              <option value="pvp">Player vs. Player</option>
+              <option value="pva">Player vs. AI</option>
+            </select>
+          </div>
+
+          <div class="select-pvp hide" id="select-pvp">
+            <div class="player-names" id="player-names">
+              <div>Player 1 (X): <span id="player1-name"></span></div>
+              <div>Player 2 (O): <span id="player2-name"></span></div>
+            </div>
+            <div class="database-fetch">
+              <div class="data-display" id="data-display"></div>
+              <button id="fetch-data-btn" class="fetch-data-btn">
+                Fetch Data
+              </button>
+            </div>
+          </div>
+
+          <div class="select-pva hide" id="select-pva">
+            <label for="ai-difficulty">AI Difficulty:</label>
+            <select id="ai-difficulty">
+              <option value="" disabled selected>Select Difficulty</option>
+              <option value="naive">Naive</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
