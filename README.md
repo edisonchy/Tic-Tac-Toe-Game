@@ -3,11 +3,9 @@
 A simple Tic-Tac-Toe game with both **PvP** and **PvAI** modes.  
 Data is stored in **SQLite**, and **WebSockets** enable real-time multiplayer across browser instances.
 
-![Tic Tac Toe Screenshot](https://github.com/user-attachments/assets/e1d7b28c-0fb5-4ea1-a8b2-b9ba12f3106f)
+<img src="https://github.com/user-attachments/assets/e1d7b28c-0fb5-4ea1-a8b2-b9ba12f3106f" alt="Tic Tac Toe Screenshot" width="600">
 
----
-
-## ✨ Features
+## Features
 
 ### 👥 Player vs Player
 - Open the game in multiple browser windows/devices.  
