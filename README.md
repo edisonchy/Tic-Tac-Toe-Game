@@ -7,11 +7,12 @@ Data is stored in **SQLite**, and **WebSockets** enable real-time multiplayer ac
 
 ## Features
 
-### 👥 Player vs Player
+### Player vs Player
 - Open the game in multiple browser windows/devices.  
 - Moves sync in real time via **WebSocket**.
+- Game score stored in backend **SQLite database** and retrievable through **API**.  
 
-### 🤖 Player vs AI
+### Player vs AI
 - **Naive Mode**  
   - Picks a completely random empty square.
 - **Intermediate Mode**  
@@ -23,3 +24,13 @@ Data is stored in **SQLite**, and **WebSockets** enable real-time multiplayer ac
   - Simulates all possible continuations to the end of the game.  
   - Scores outcomes: **+10 (win), 0 (draw), −10 (loss)**.  
   - Chooses the optimal move.
+
+## How to Run the Game
+
+1. Start the backend server:
+   ```bash
+   node server.js
+   ```
+   
+2.	Open the frontend:
+    - open index.html with your desered browser
