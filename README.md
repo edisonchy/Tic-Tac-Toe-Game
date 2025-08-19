@@ -33,4 +33,4 @@ Data is stored in **SQLite**, and **WebSockets** enable real-time multiplayer ac
    ```
    
 2.	Open the frontend:
-    - open index.html with your desered browser
+    - open **index.html** with your desered browser
